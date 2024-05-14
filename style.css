@@ -1,29 +1,78 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 main {
-  margin-top: 60px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 main h1 {
-  margin: 0 10px;
-  text-align: center;
   font-family: "Amatic SC", cursive;
-  font-size: 65px;
+  font-size: 45px; /* Reduced font size */
+  margin: 0 10px 20px;
 }
 
-main h2 {
-  margin: 18px 0 12px 0;
+.coffee-basics,
+.coffee-facts,
+.coffee-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Reduced gap */
+  padding: 0 5%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.coffee-item,
+.fact-item {
+  flex: 1 1 calc(50% - 30px); /* Adjusted for better responsiveness */
+  text-align: left;
+  box-sizing: border-box;
+  max-width: 300px; /* Reduced max width */
+}
+
+.coffee-item.wide {
+  flex: 2 1 100%;
+  max-width: 600px; /* Reduced max width */
+}
+
+.coffee-item img,
+.fact-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coffee-item h2,
+.fact-item h3 {
+  margin: 12px 0 8px 0; /* Reduced margins */
   border-bottom: 1px solid #5c4f41;
   font-family: "Special Elite", cursive;
-  font-size: 24px;
 }
 
-main h3 {
-  margin: 18px 0 12px 0;
-  border-bottom: 1px solid #5c4f41;
-  font-family: "Special Elite", cursive;
-  font-size: 18px;
+.coffee-item h2 {
+  font-size: 20px; /* Reduced font size */
 }
 
-main p {
-  font-family: "Roboto", sans-serif;
-  margin-top: 0;
+.fact-item h3 {
+  font-size: 16px; /* Reduced font size */
+}
+
+.coffee-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px; /* Reduced gap */
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.coffee-gallery img {
+  flex: 1 1 calc(25% - 10px); /* Adjusted for better responsiveness */
+  max-width: calc(25% - 10px); /* Reduced max width */
+  height: auto;
+  box-sizing: border-box;
 }
